@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import Phishing from "../../assets/phishing.svg";
-import { useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Check from "../../assets/check.svg";
 import { IoArrowDownSharp } from "react-icons/io5";
 let malware;
 let phishing;
 let defacement;
+let category;
 const Category = () => {
-  const { category } = useParams();
+  const { state:{category} } = useLocation();
+  const navigate = useNavigate();
+  // useEffect(() => {
+  //   if (state) {
+  //     category = state.category;
+  //   } else {
+  //     navigate("/");
+  //   }
+  // }, [state]);
+
   const [more, setMore] = useState(false);
   const [morePhish, setMorePhish] = useState(false);
   const [moreDeface, setMoreDeface] = useState(false);

@@ -11,7 +11,7 @@ function App() {
     <div className="App bg-black overflow-hidden  font-Poppins">
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/:category" element={<Category/>}/>
+        <Route path="/category" element={<Category/>}/>
       </Routes>
     </div>
   );
