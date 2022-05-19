@@ -4,7 +4,7 @@ import Search from "../../assets/search.svg";
 import styles from "./index.module.css"
 const About = () => {
   return (
-    <div className={` mt-2 px-10 md:px-24 pb-40`}>
+    <div className={` mt-2 px-10 md:px-24 pb-40 pt-20`} id="about">
       <h1 className="text-white font-bold text-3xl text-center w-full mb-8">
        About Us
       </h1>

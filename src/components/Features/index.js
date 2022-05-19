@@ -5,7 +5,7 @@ import VirusAttack from "../../assets/multiattack.svg"
 import styles from "./index.module.css"
 const Features = () => {
   return (
-    <div className={`${styles.feature} bg-DeepBlue mt-2 px-10 md:px-24 py-32`}>
+    <div className={`${styles.feature} bg-DeepBlue mt-2 px-10 md:px-24 py-32`} id="feature">
       <h1 className="text-blue-400 text-3xl text-center w-full mb-8">
         Our Features
       </h1>
